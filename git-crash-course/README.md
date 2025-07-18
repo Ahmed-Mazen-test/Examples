@@ -56,7 +56,7 @@ ssh-keygen -t rsa
 for WSL users and if you create a non default key you might need to add it
 
 ```sh
-eval 'ssh-agent'
+eval "$(ssh-agent -s)"
 ssh-add /home/user/.ssh/[key]
 ```
 
